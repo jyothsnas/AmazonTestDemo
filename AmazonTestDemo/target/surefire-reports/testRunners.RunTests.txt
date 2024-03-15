@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: testRunners.RunTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 5.379 s <<< FAILURE! -- in testRunners.RunTests
+User journey for Mobile phones search.List all the Samsung phones with the User given specifications -- Time elapsed: 4.983 s <<< FAILURE!
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at steps.HomepageStepDefs.user_landed_on_the_home_page(HomepageStepDefs.java:70)
+	at ✽.User landed on the HomePage(file:///C:/Users/crake/workspace/AmazonTestDemo/src/test/resources/Features/homePage.feature:12)
+

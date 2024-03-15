@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="5.463">
+    <testcase classname="User journey for Mobile phones search" name="List all the Samsung phones with the User given specifications" time="5.29">
+        <failure message="element click intercepted: Element &lt;a href=&quot;/gp/browse.html?node=1389401031&amp;amp;ref_=nav_em_sbc_mobcomp_all_mobiles_0_2_8_2&quot; class=&quot;hmenu-item&quot;&gt;...&lt;/a&gt; is not clickable at point (191, 166). Other element would receive the click: &lt;div id=&quot;hmenu-content&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=122.0.6261.129)&#10;Build info: version: '4.11.0', revision: '040bc5406b'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [8cef60ca09d8db16bdeb4ca4fde18c6b, clickElement {id=f.73BD8D41D51094AF3ACE6E02A4567CCC.d.33178A0D025F42EDC731E3A68012EE9A.e.45}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.129, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\crake\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51921}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51921/devtoo..., se:cdpVersion: 122.0.6261.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on windows (8cef60ca09d8db16bdeb4ca4fde18c6b)] -&gt; xpath: //li/a[text()='All Mobile Phones'='hmenu-item hmenu-title']]&#10;Session ID: 8cef60ca09d8db16bdeb4ca4fde18c6b" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[Given User landed on the HomePage...........................................passed
+When User selects "Electronics and Computers" from the Main menu............passed
+And selects "Phones and Accessories"........................................failed
+And Selects the Mobile phones "Samsung".....................................skipped
+Then User should see the results for "Samsung"..............................skipped
+
+StackTrace:
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="/gp/browse.html?node=1389401031&amp;ref_=nav_em_sbc_mobcomp_all_mobiles_0_2_8_2" class="hmenu-item">...</a> is not clickable at point (191, 166). Other element would receive the click: <div id="hmenu-content">...</div>
+  (Session info: chrome=122.0.6261.129)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8cef60ca09d8db16bdeb4ca4fde18c6b, clickElement {id=f.73BD8D41D51094AF3ACE6E02A4567CCC.d.33178A0D025F42EDC731E3A68012EE9A.e.45}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.129, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\crake\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51921}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51921/devtoo..., se:cdpVersion: 122.0.6261.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (8cef60ca09d8db16bdeb4ca4fde18c6b)] -> xpath: //li/a[text()='All Mobile Phones'='hmenu-item hmenu-title']]
+Session ID: 8cef60ca09d8db16bdeb4ca4fde18c6b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at pages.BasePage.click(BasePage.java:32)
+	at pages.HomePage.selectSubCategory(HomePage.java:63)
+	at steps.HomepageStepDefs.selects(HomepageStepDefs.java:69)
+	at ✽.selects "Phones and Accessories"(file:///C:/Users/crake/workspace/AmazonTestDemo/src/test/resources/Features/homePage.feature:11)
+]]></failure>
+    </testcase>
+</testsuite>
